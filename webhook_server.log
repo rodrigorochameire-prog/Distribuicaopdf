@@ -1,0 +1,15 @@
+Text file: webhook_server.log
+Latest content with line numbers:
+1	2025-10-19 09:14:33,619 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2	 * Running on all addresses (0.0.0.0)
+3	 * Running on http://127.0.0.1:5000
+4	 * Running on http://169.254.0.21:5000
+5	2025-10-19 09:14:33,619 - INFO - [33mPress CTRL+C to quit[0m
+6	2025-10-19 09:16:56,082 - INFO - Webhook recebido! Método: POST
+7	2025-10-19 09:16:56,082 - INFO - Requisição POST recebida. Disparando automação...
+8	2025-10-19 09:16:56,083 - INFO - Script de automação disparado com sucesso.
+9	2025-10-19 09:16:56,083 - INFO - 10.246.219.1 - - [19/Oct/2025 09:16:56] "POST /webhook HTTP/1.1" 200 -
+10	2025-10-19 09:17:01,591 - INFO - 10.246.219.1 - - [19/Oct/2025 09:17:01] "[31m[1mHEAD /webhook HTTP/1.1[0m" 405 -
+11	2025-10-19 09:17:01,599 - INFO - 10.246.219.1 - - [19/Oct/2025 09:17:01] "[31m[1mGET /webhook HTTP/1.1[0m" 405 -
+12	2025-10-19 09:17:01,716 - INFO - 10.246.219.1 - - [19/Oct/2025 09:17:01] "[31m[1mGET /webhook HTTP/1.1[0m" 405 -
+13	

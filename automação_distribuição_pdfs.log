@@ -1,0 +1,668 @@
+Fri Oct 17 14:42:21 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 34
+    CREDENTIALS_FILE, SCOPES, redirect_uri=\'urn:ietf:wg:oauth:2.0:oob\')
+                                            ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 14:42:21 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:45:14 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 36
+    auth_url, _ = flow.authorization_url(prompt=\'consent\')
+                                                 ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 14:45:14 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:45:28 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 90
+    response = drive_service.files().list(q=query, spaces=\'drive\', fields=\'files(id, name)\').execute()
+                                                           ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 14:45:28 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:45:49 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 91
+    folders = response.get(\'files\', [])
+                            ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 14:45:49 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:46:00 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 94
+    return folders[0][\'id\']
+                       ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 14:46:00 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:46:35 EDT 2025: Iniciando execução do script de automação.
+Encontrados 2 arquivos PDF na pasta de origem.
+Processando arquivo: 8013869-19.2024.8.05.0039-1760716141682-1329818-processo.pdf (ID: 1eMrzCiZiRhhOw1f_bGefbd-z2tVnmYMy)
+Nome do assistido encontrado: Carlos Helio De Souza Silva, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+Pasta 'Carlos Helio De Souza Silva' criada com ID: 1F4tlEB6iehsHLgCD2DJhVZw-V6YFuvfc
+Arquivo '8013869-19.2024.8.05.0039-1760716141682-1329818-processo.pdf' movido para a pasta 'Carlos Helio De Souza Silva' dentro de 'Processos - VVD'
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 14:46:48 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:52:42 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 14:52:45 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:53:26 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 100
+    folder = drive_service.files().create(body=file_metadata, fields='id').execute()
+IndentationError: unexpected indent
+Fri Oct 17 14:53:26 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:53:42 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 103
+    return folder.get('id'))
+                           ^
+SyntaxError: unmatched ')'
+Fri Oct 17 14:53:42 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:53:52 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 103
+    return folder.get(\'id\')# --- Processamento principal --- #
+                       ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 14:53:53 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:54:04 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 103
+    return folder.get(\'id\')
+IndentationError: unexpected indent
+Fri Oct 17 14:54:04 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:54:20 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 14:54:23 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:55:12 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 14:55:14 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:55:59 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 14:56:02 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:56:26 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 14:56:28 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:59:05 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 90
+    response = drive_service.files().list(q=query, spaces=\'drive\', fields=\'files(id, name)\').execute()
+                                                           ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 14:59:05 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:59:30 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 93
+    response = drive_service.files().list(q=query, spaces=\'drive\', fields=\'files(id, name)\').execute()
+                                                           ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 14:59:30 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 14:59:46 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 93
+    response = drive_service.files().list(q=query, spaces=\'drive\', fields='files(id, name)').execute()
+                                                           ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 14:59:46 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 15:00:04 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 93
+    response = drive_service.files().list(q=query, spaces=\'drive\', fields='files(id, name)').execute()
+                                                           ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 15:00:04 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 15:01:06 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 93
+    response = drive_service.files().list(q=query, spaces=\'drive\', fields=\'files(id, name)\').execute()
+                                                           ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 15:01:06 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 15:01:46 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 15:01:49 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 21:59:39 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 21:59:42 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 22:00:20 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 22:00:23 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 22:00:37 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 22:00:39 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 22:00:59 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 62
+    re.compile(r"([A-ZÀ-Úa-zà-ú\s]+?)\s*\(RÉU|REU|ACUSADO|DENUNCIADO|INVESTIGADO\)", re.IGNORECASE),
+IndentationError: unexpected indent
+Fri Oct 17 22:00:59 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 22:01:19 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 22:01:22 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 22:01:43 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Fri Oct 17 22:01:45 EDT 2025: Execução do script de automação finalizada.
+Fri Oct 17 22:03:27 EDT 2025: Iniciando execução do script de automação.
+  File "/home/ubuntu/automação_distribuição_pdfs.py", line 36
+    CREDENTIALS_FILE, SCOPES, redirect_uri=\'urn:ietf:wg:oauth:2.0:oob\')
+                                            ^
+SyntaxError: unexpected character after line continuation character
+Fri Oct 17 22:03:27 EDT 2025: Execução do script de automação finalizada.
+Sat Oct 18 20:01:39 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Sat Oct 18 20:01:43 EDT 2025: Execução do script de automação finalizada.
+Sat Oct 18 20:02:09 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Sat Oct 18 20:02:12 EDT 2025: Execução do script de automação finalizada.
+Sat Oct 18 20:02:39 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Sat Oct 18 20:02:41 EDT 2025: Execução do script de automação finalizada.
+Sat Oct 18 20:02:57 EDT 2025: Iniciando execução do script de automação.
+Encontrados 1 arquivos PDF na pasta de origem.
+Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 1W2EQLMIw7MPV-aT6Gtnz1nYhXkRVm60_)
+Erro ao extrair informações do PDF /tmp/8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf: 'NoneType' object has no attribute 'strip'
+Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' . Arquivo não movido.
+Sat Oct 18 20:02:59 EDT 2025: Execução do script de automação finalizada.
+2025-10-18 20:06:12,434 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 20:06:12,681 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-18 20:06:37,616 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 20:06:37,829 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-18 20:08:29,006 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 20:08:29,182 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-18 20:08:58,695 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 20:08:58,899 - INFO - Encontrados 5 arquivos PDF na pasta de origem.
+2025-10-18 20:08:58,899 - INFO - Processando arquivo: 8011456-96.2025.8.05.0039-1760654290217-1329818-processo.pdf (ID: 1OlQk030OXL7F0bZWlFI0Jndp53Qe3nbj)
+2025-10-18 20:09:01,008 - INFO - Nome do assistido encontrado: Ruan Flavio Borges Dias, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 20:09:01,545 - INFO - Pasta 'Ruan Flavio Borges Dias' criada com ID: 1SmqqFmazJYhPuCxs5TuxaHKpoXbpt8F2
+2025-10-18 20:09:02,053 - INFO - Arquivo '8011456-96.2025.8.05.0039-1760654290217-1329818-processo.pdf' movido para a pasta 'Ruan Flavio Borges Dias' dentro de 'Processos - VVD'
+2025-10-18 20:09:02,053 - INFO - Processando arquivo: 8011452-59.2025.8.05.0039-1760710636900-1329818-processo.pdf (ID: 1sMraC_qWr1IVSLPfMiiOnuAq1RdLDg9q)
+2025-10-18 20:09:03,618 - INFO - Nome do assistido encontrado: Eliaser Dos Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 20:09:04,338 - INFO - Arquivo '8011452-59.2025.8.05.0039-1760710636900-1329818-processo.pdf' movido para a pasta 'Eliaser Dos Santos' dentro de 'Processos - VVD'
+2025-10-18 20:09:04,338 - INFO - Processando arquivo: 0505844-09.2018.8.05.0039-1760713040898-1329818-processo.pdf (ID: 12c1mIdAZI7j_G3mbWp9rPC1_41DEqRWx)
+2025-10-18 20:09:07,697 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '0505844-09.2018.8.05.0039-1760713040898-1329818-processo.pdf' . Arquivo não movido.
+2025-10-18 20:09:07,698 - INFO - Processando arquivo: 8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf (ID: 17MkiFRj0V5mjstUTULPGc479uZCmW52O)
+2025-10-18 20:09:09,251 - INFO - Nome do assistido encontrado: Carlos Helio De Souza Silva, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 20:09:10,034 - INFO - Arquivo '8015500-95.2024.8.05.0039-1760716071076-1329818-processo.pdf' movido para a pasta 'Carlos Helio De Souza Silva' dentro de 'Processos - VVD'
+2025-10-18 20:09:10,034 - INFO - Processando arquivo: dummy_processo.pdf (ID: 1j0etbzmSNWY1dKTZ3kbPfPly1k3Et-78)
+2025-10-18 20:09:10,515 - INFO - Nome do assistido encontrado: Eliaser Dos Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 20:09:11,250 - INFO - Arquivo 'dummy_processo.pdf' movido para a pasta 'Eliaser Dos Santos' dentro de 'Processos - VVD'
+2025-10-18 20:09:49,228 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 20:09:49,454 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-18 20:09:49,454 - INFO - Processando arquivo: 0505844-09.2018.8.05.0039-1760713040898-1329818-processo.pdf (ID: 12c1mIdAZI7j_G3mbWp9rPC1_41DEqRWx)
+2025-10-18 20:09:52,851 - INFO - Nome do assistido encontrado: Luiz Alberto Fernandes De Souza, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 20:09:53,416 - INFO - Pasta 'Luiz Alberto Fernandes De Souza' criada com ID: 11tSJWL0158jn7JTdxXQgx12Gbomi_eM_
+2025-10-18 20:09:54,160 - INFO - Arquivo '0505844-09.2018.8.05.0039-1760713040898-1329818-processo.pdf' movido para a pasta 'Luiz Alberto Fernandes De Souza' dentro de 'Processos - VVD'
+2025-10-18 22:34:18,177 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 22:34:18,369 - INFO - Encontrados 6 arquivos PDF na pasta de origem.
+2025-10-18 22:34:18,369 - INFO - Processando arquivo: 8012054-21.2023.8.05.0039-1760838866147-1329818-processo.pdf (ID: 1u44LQBCU_T28d6fiJTk2-uYdNYoOSveA)
+2025-10-18 22:34:31,372 - INFO - Nome do assistido encontrado: Carlos Andre De Jesus Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 22:34:31,795 - INFO - Pasta 'Processos - VVD' criada com ID: 1WX1dceJFMlyjnZTDz-MXQ0B5rDac9Hhx
+2025-10-18 22:34:32,234 - INFO - Pasta 'Carlos Andre De Jesus Santos' criada com ID: 12SJ6Zp5QiDEmOiicof-orlgPskhr5Rou
+2025-10-18 22:34:33,213 - INFO - Arquivo '8012054-21.2023.8.05.0039-1760838866147-1329818-processo.pdf' movido para a pasta 'Carlos Andre De Jesus Santos' dentro de 'Processos - VVD'
+2025-10-18 22:34:33,214 - INFO - Processando arquivo: 8125664-13.2025.8.05.0001-1760838454587-1329818-processo.pdf (ID: 1-ZxHAdXPf1At-xg1Xu8_gZ9YSCXLvP0q)
+2025-10-18 22:34:39,977 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8125664-13.2025.8.05.0001-1760838454587-1329818-processo.pdf' . Arquivo não movido.
+2025-10-18 22:34:39,977 - INFO - Processando arquivo: 8008354-37.2023.8.05.0039-1760838510083-1329818-processo.pdf (ID: 1GlZV4jdsyCD37f1iix1aGEZ7BZcY6_VI)
+2025-10-18 22:34:46,865 - INFO - Nome do assistido encontrado: Gleidson Dos Santos Batista, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 22:34:47,377 - INFO - Pasta 'Gleidson Dos Santos Batista' criada com ID: 1Rh3Pfhjg0IDZClmzxtxPzBtbYUH0mkZU
+2025-10-18 22:34:48,066 - INFO - Arquivo '8008354-37.2023.8.05.0039-1760838510083-1329818-processo.pdf' movido para a pasta 'Gleidson Dos Santos Batista' dentro de 'Processos - VVD'
+2025-10-18 22:34:48,066 - INFO - Processando arquivo: 8011583-34.2025.8.05.0039-1760838333405-1329818-processo.pdf (ID: 1XKiwShsIB9iDyFphdS43cotMgQn4_Rem)
+2025-10-18 22:34:51,377 - INFO - Nome do assistido encontrado: Wallace Barbosa Cardoso, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 22:34:51,886 - INFO - Pasta 'Wallace Barbosa Cardoso' criada com ID: 1akURArh6aw4w-OC2FGiwBC0I47MyiIgB
+2025-10-18 22:34:52,584 - INFO - Arquivo '8011583-34.2025.8.05.0039-1760838333405-1329818-processo.pdf' movido para a pasta 'Wallace Barbosa Cardoso' dentro de 'Processos - VVD'
+2025-10-18 22:34:52,584 - INFO - Processando arquivo: 8002833-77.2024.8.05.0039-1760838190711-1329818-processo.pdf (ID: 1O3h-NwwCi6icUEZwNUCJ0VF6pT6x5FQy)
+2025-10-18 22:34:56,853 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8002833-77.2024.8.05.0039-1760838190711-1329818-processo.pdf' . Arquivo não movido.
+2025-10-18 22:34:56,853 - INFO - Processando arquivo: 0505844-09.2018.8.05.0039-1760713040898-1329818-processo.pdf (ID: 1ZnZxuIHCcff5WT1m-x2swGTHN5U1d39y)
+2025-10-18 22:34:59,863 - INFO - Nome do assistido encontrado: Luiz Alberto Fernandes De Souza, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 22:35:00,321 - INFO - Pasta 'Luiz Alberto Fernandes De Souza' criada com ID: 1P8fbkdp9bndnTxYROy1F4EQJp0c8BONu
+2025-10-18 22:35:00,852 - INFO - Arquivo '0505844-09.2018.8.05.0039-1760713040898-1329818-processo.pdf' movido para a pasta 'Luiz Alberto Fernandes De Souza' dentro de 'Processos - VVD'
+2025-10-18 22:36:14,291 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 22:36:14,533 - INFO - Encontrados 4 arquivos PDF na pasta de origem.
+2025-10-18 22:36:14,533 - INFO - Processando arquivo: 8011233-17.2023.8.05.0039-1760838596616-1329818-processo.pdf (ID: 1x3Stsgahdq8GP6ihLF6wMZGkaoQ7wOFD)
+2025-10-18 22:36:19,564 - INFO - Nome do assistido encontrado: Marcos De Araujo Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 22:36:20,090 - INFO - Pasta 'Marcos De Araujo Santos' criada com ID: 1vwPD1WRmMTu7IDUZcStrp9mKg5sOZdRO
+2025-10-18 22:36:20,940 - INFO - Arquivo '8011233-17.2023.8.05.0039-1760838596616-1329818-processo.pdf' movido para a pasta 'Marcos De Araujo Santos' dentro de 'Processos - VVD'
+2025-10-18 22:36:20,940 - INFO - Processando arquivo: 8125664-13.2025.8.05.0001-1760838454587-1329818-processo.pdf (ID: 1-ZxHAdXPf1At-xg1Xu8_gZ9YSCXLvP0q)
+2025-10-18 22:36:25,114 - INFO - Nome do assistido encontrado: Josenildo Da Silva Bezerra, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 22:36:25,614 - INFO - Pasta 'Josenildo Da Silva Bezerra' criada com ID: 1weLJGtpyVMRJffzY8iOfePK6eUnNMQxN
+2025-10-18 22:36:26,360 - INFO - Arquivo '8125664-13.2025.8.05.0001-1760838454587-1329818-processo.pdf' movido para a pasta 'Josenildo Da Silva Bezerra' dentro de 'Processos - VVD'
+2025-10-18 22:36:26,360 - INFO - Processando arquivo: 8002833-77.2024.8.05.0039-1760838190711-1329818-processo.pdf (ID: 1O3h-NwwCi6icUEZwNUCJ0VF6pT6x5FQy)
+2025-10-18 22:36:30,072 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8002833-77.2024.8.05.0039-1760838190711-1329818-processo.pdf' . Arquivo não movido.
+2025-10-18 22:36:30,073 - INFO - Processando arquivo: 8006887-52.2025.8.05.0039-1760838066175-1329818-processo.pdf (ID: 1cV2850KNv8aZaVW5aouvSQgR2oVmSI37)
+2025-10-18 22:36:33,376 - INFO - Nome do assistido encontrado: Daniel Marcos Da Silva Junior, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 22:36:33,832 - INFO - Pasta 'Daniel Marcos Da Silva Junior' criada com ID: 1vGtmdAOYvFVOpFPY469b_lbbieonusAH
+2025-10-18 22:36:34,535 - INFO - Arquivo '8006887-52.2025.8.05.0039-1760838066175-1329818-processo.pdf' movido para a pasta 'Daniel Marcos Da Silva Junior' dentro de 'Processos - VVD'
+2025-10-18 22:37:03,923 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 22:37:04,117 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-18 22:37:04,117 - INFO - Processando arquivo: 8002833-77.2024.8.05.0039-1760838190711-1329818-processo.pdf (ID: 1O3h-NwwCi6icUEZwNUCJ0VF6pT6x5FQy)
+2025-10-18 22:37:07,994 - INFO - Nome do assistido encontrado: Diego Dos Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 22:37:08,467 - INFO - Pasta 'Diego Dos Santos' criada com ID: 1O3LlorBwhxrasuSgdgUi3xFgoSSbT2dT
+2025-10-18 22:37:08,986 - INFO - Arquivo '8002833-77.2024.8.05.0039-1760838190711-1329818-processo.pdf' movido para a pasta 'Diego Dos Santos' dentro de 'Processos - VVD'
+2025-10-18 22:48:13,216 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 22:48:13,466 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-18 22:48:13,466 - INFO - Processando arquivo: 8011233-17.2023.8.05.0039-1760838596616-1329818-processo.pdf (ID: 1W-Yv1OdDFoDk41vQsOe6bOzH3jYvPFIH)
+2025-10-18 22:48:18,896 - INFO - Nome do assistido encontrado: Marcos De Araujo Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 22:48:20,102 - INFO - Arquivo '8011233-17.2023.8.05.0039-1760838596616-1329818-processo.pdf' copiado para a pasta 'Marcos De Araujo Santos' dentro de 'Processos - VVD' e original excluído.
+2025-10-18 22:48:20,102 - INFO - Processando arquivo: 8006887-52.2025.8.05.0039-1760838066175-1329818-processo (1).pdf (ID: 1jTy46HjHxMWBv1FjZLpRvwrcuA8Wb_FL)
+2025-10-18 22:48:23,068 - INFO - Nome do assistido encontrado: Daniel Marcos Da Silva Junior, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 22:48:24,226 - INFO - Arquivo '8006887-52.2025.8.05.0039-1760838066175-1329818-processo (1).pdf' copiado para a pasta 'Daniel Marcos Da Silva Junior' dentro de 'Processos - VVD' e original excluído.
+2025-10-18 22:57:03,950 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 22:57:04,121 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-18 23:00:37,279 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 23:00:37,456 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-18 23:00:37,456 - INFO - Processando arquivo: 8013421-46.2024.8.05.0039-1760842739712-1329818-processo.pdf (ID: 1J1seqYCY9DESTrvBK0PxSlLltDvFin_b)
+2025-10-18 23:00:48,695 - INFO - Nome do assistido encontrado: Jonathan Santana Valverde, Órgão Julgador: VARA DO JÚRI E EXECUÇÕES PENAIS DA COMARCA DE CAMAÇARI
+2025-10-18 23:00:49,120 - INFO - Pasta 'Processos - Júri e Execuções Penais' criada com ID: 17jVu7JrobKMy7ajLVYdcwZEHimPzGVYd
+2025-10-18 23:00:49,507 - INFO - Pasta 'Jonathan Santana Valverde' criada com ID: 12vX8uPSarGmuB8VBQru5nwBvlMHrIy7l
+2025-10-18 23:00:50,605 - INFO - Arquivo '8013421-46.2024.8.05.0039-1760842739712-1329818-processo.pdf' copiado para a pasta 'Jonathan Santana Valverde' dentro de 'Processos - Júri e Execuções Penais' e original excluído.
+2025-10-18 23:06:03,370 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 23:06:03,581 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-18 23:06:03,581 - INFO - Processando arquivo: 8013421-46.2024.8.05.0039-1760842739712-1329818-processo.pdf (ID: 125MZVWLHa4m-2djakpCLRIIeO0Mhsv1H)
+2025-10-18 23:06:13,456 - INFO - Nome do assistido encontrado: Jonathan Santana Valverde, Órgão Julgador: VARA DO JÚRI E EXECUÇÕES PENAIS DA COMARCA DE CAMAÇARI
+2025-10-18 23:06:15,200 - INFO - Arquivo '8013421-46.2024.8.05.0039-1760842739712-1329818-processo.pdf' copiado para a pasta 'Jonathan Santana Valverde' dentro de '1_S-2qdqO0n1npNcs0PnoagBM4ZtwKhk-' e original excluído.
+2025-10-18 23:23:19,271 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 23:23:19,478 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-18 23:23:19,478 - INFO - Processando arquivo: 8005970-52.2024.8.05.0044-1760844175973-1329818-processo.pdf (ID: 1WKYapVKCXDv0JTy91qMWAwoxcMDpWuKe)
+2025-10-18 23:23:32,797 - INFO - Nome do assistido encontrado: Yure De Sanatna Santos Silva, Órgão Julgador: VARA CRIMINAL DE CANDEIAS
+2025-10-18 23:23:32,798 - WARNING - Não foi possível determinar a comarca para o órgão julgador 'VARA CRIMINAL DE CANDEIAS'. Arquivo '8005970-52.2024.8.05.0044-1760844175973-1329818-processo.pdf' não movido.
+2025-10-18 23:23:32,798 - INFO - Processando arquivo: 8003019-51.2025.8.05.0044-1760844094941-1329818-processo.pdf (ID: 1WRVWAIMBMnMWY1iGZ6REcIwj3oRznGUQ)
+2025-10-18 23:23:37,295 - INFO - Nome do assistido encontrado: Marcia Jesus Da Silva, Órgão Julgador: VARA CRIMINAL DE CANDEIAS
+2025-10-18 23:23:37,295 - WARNING - Não foi possível determinar a comarca para o órgão julgador 'VARA CRIMINAL DE CANDEIAS'. Arquivo '8003019-51.2025.8.05.0044-1760844094941-1329818-processo.pdf' não movido.
+2025-10-18 23:23:37,295 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8003019-51.2025.8.05.0044-1760844094941-1329818-processo.pdf' . Arquivo não movido.
+2025-10-18 23:24:37,831 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 23:24:38,115 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-18 23:24:38,115 - INFO - Processando arquivo: 8005970-52.2024.8.05.0044-1760844175973-1329818-processo.pdf (ID: 1WKYapVKCXDv0JTy91qMWAwoxcMDpWuKe)
+2025-10-18 23:24:50,404 - INFO - Nome do assistido encontrado: Yure De Sanatna Santos Silva, Órgão Julgador: VARA CRIMINAL DE CANDEIAS
+2025-10-18 23:24:50,816 - INFO - Pasta 'Processos - Candeias' criada com ID: 1aj-v26yswi1kemwWB8qsthX8ZO1eJbYv
+2025-10-18 23:24:51,199 - INFO - Pasta 'Yure De Sanatna Santos Silva' criada com ID: 12z5RCXlWCo-agH0hGsfJZCbASyauQ6K5
+2025-10-18 23:24:52,305 - INFO - Arquivo '8005970-52.2024.8.05.0044-1760844175973-1329818-processo.pdf' copiado para a pasta 'Yure De Sanatna Santos Silva' e original excluído.
+2025-10-18 23:24:52,305 - INFO - Processando arquivo: 8003019-51.2025.8.05.0044-1760844094941-1329818-processo.pdf (ID: 1WRVWAIMBMnMWY1iGZ6REcIwj3oRznGUQ)
+2025-10-18 23:24:57,102 - INFO - Nome do assistido encontrado: Marcia Jesus Da Silva, Órgão Julgador: VARA CRIMINAL DE CANDEIAS
+2025-10-18 23:24:57,659 - INFO - Pasta 'Marcia Jesus Da Silva' criada com ID: 1kAx5AqkKcVuXqHygVXF4ltrwOCsrTfc5
+2025-10-18 23:24:58,751 - INFO - Arquivo '8003019-51.2025.8.05.0044-1760844094941-1329818-processo.pdf' copiado para a pasta 'Marcia Jesus Da Silva' e original excluído.
+2025-10-18 23:24:58,751 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8003019-51.2025.8.05.0044-1760844094941-1329818-processo.pdf' . Arquivo não movido.
+2025-10-18 23:25:23,878 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 23:25:24,083 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-18 23:44:34,684 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-18 23:44:34,922 - INFO - Encontrados 8 arquivos PDF na pasta de origem.
+2025-10-18 23:44:34,922 - INFO - Processando arquivo: 8011233-17.2023.8.05.0039-1760838596616-1329818-processo.pdf (ID: 1wrSy2MRJBQ2F9PbK-NHk-CpC-w9dfmP6)
+2025-10-18 23:44:39,204 - INFO - Nome do assistido encontrado: Marcos De Araujo Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 23:44:40,476 - INFO - Arquivo '8011233-17.2023.8.05.0039-1760838596616-1329818-processo.pdf' copiado para a pasta 'Marcos De Araujo Santos' e original excluído.
+2025-10-18 23:44:40,476 - INFO - Processando arquivo: 8012054-21.2023.8.05.0039-1760838866147-1329818-processo.pdf (ID: 1aTazD83yLNH2RuL26tpBro62q8D6Sq6n)
+2025-10-18 23:44:55,092 - INFO - Nome do assistido encontrado: Carlos Andre De Jesus Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 23:44:56,234 - INFO - Arquivo '8012054-21.2023.8.05.0039-1760838866147-1329818-processo.pdf' copiado para a pasta 'Carlos Andre De Jesus Santos' e original excluído.
+2025-10-18 23:44:56,234 - INFO - Processando arquivo: 8125664-13.2025.8.05.0001-1760838454587-1329818-processo.pdf (ID: 1YRJNAVdi8lZxv7KeC1ET3o0yEgpQvxt-)
+2025-10-18 23:45:00,961 - INFO - Nome do assistido encontrado: Josenildo Da Silva Bezerra, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 23:45:02,087 - INFO - Arquivo '8125664-13.2025.8.05.0001-1760838454587-1329818-processo.pdf' copiado para a pasta 'Josenildo Da Silva Bezerra' e original excluído.
+2025-10-18 23:45:02,087 - INFO - Processando arquivo: 8008354-37.2023.8.05.0039-1760838510083-1329818-processo.pdf (ID: 10Ok7brD5uH9atahgln6U1P51cpKPQzNR)
+2025-10-18 23:45:08,085 - INFO - Nome do assistido encontrado: Gleidson Dos Santos Batista, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 23:45:09,323 - INFO - Arquivo '8008354-37.2023.8.05.0039-1760838510083-1329818-processo.pdf' copiado para a pasta 'Gleidson Dos Santos Batista' e original excluído.
+2025-10-18 23:45:09,323 - INFO - Processando arquivo: 8011583-34.2025.8.05.0039-1760838333405-1329818-processo.pdf (ID: 15RUQAYjhFUk2gq4oCsyUjNTyGW2Kmwf7)
+2025-10-18 23:45:11,891 - INFO - Nome do assistido encontrado: Wallace Barbosa Cardoso, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 23:45:13,015 - INFO - Arquivo '8011583-34.2025.8.05.0039-1760838333405-1329818-processo.pdf' copiado para a pasta 'Wallace Barbosa Cardoso' e original excluído.
+2025-10-18 23:45:13,015 - INFO - Processando arquivo: 8002833-77.2024.8.05.0039-1760838190711-1329818-processo.pdf (ID: 14egECGRJd_C3Caag9KGLgU1kbVwhLCUE)
+2025-10-18 23:45:15,781 - INFO - Nome do assistido encontrado: Diego Dos Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 23:45:16,827 - INFO - Arquivo '8002833-77.2024.8.05.0039-1760838190711-1329818-processo.pdf' copiado para a pasta 'Diego Dos Santos' e original excluído.
+2025-10-18 23:45:16,827 - INFO - Processando arquivo: 8006887-52.2025.8.05.0039-1760838066175-1329818-processo.pdf (ID: 1WXh1QUkC6kB3TJEQ5x7epTMaYHyRroo-)
+2025-10-18 23:45:19,275 - INFO - Nome do assistido encontrado: Daniel Marcos Da Silva Junior, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 23:45:20,429 - INFO - Arquivo '8006887-52.2025.8.05.0039-1760838066175-1329818-processo.pdf' copiado para a pasta 'Daniel Marcos Da Silva Junior' e original excluído.
+2025-10-18 23:45:20,429 - INFO - Processando arquivo: 0505844-09.2018.8.05.0039-1760713040898-1329818-processo.pdf (ID: 15C9gDYoHmRWzX6GQZkI5xi3NeC36aYAV)
+2025-10-18 23:45:24,263 - INFO - Nome do assistido encontrado: Luiz Alberto Fernandes De Souza, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-18 23:45:25,343 - INFO - Arquivo '0505844-09.2018.8.05.0039-1760713040898-1329818-processo.pdf' copiado para a pasta 'Luiz Alberto Fernandes De Souza' e original excluído.
+2025-10-18 23:45:25,343 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '0505844-09.2018.8.05.0039-1760713040898-1329818-processo.pdf' . Arquivo não movido.
+2025-10-19 09:16:56,350 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 09:16:56,510 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 12:57:46,786 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 12:57:46,987 - INFO - Encontrados 5 arquivos PDF na pasta de origem.
+2025-10-19 12:57:46,987 - INFO - Processando arquivo: 8008997-92.2023.8.05.0039-1760891047472-1329818-processo.pdf (ID: 1ccCztZoQgf2hWYTfdeTLkpuvIpI0R1vv)
+2025-10-19 12:57:54,243 - INFO - Nome do assistido encontrado: Tiago Dos Santos Da Silva, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 12:57:54,243 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 12:57:54,243 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 12:57:54,243 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 12:57:54,369 - INFO - Pasta do assistido 'Tiago Dos Santos Da Silva' ID: 1iJRv83Fr1yGt_X6ZUlpXzQJzTZatj4Xz
+2025-10-19 12:57:55,076 - INFO - Arquivo '8008997-92.2023.8.05.0039-1760891047472-1329818-processo.pdf' (ID: 1ccCztZoQgf2hWYTfdeTLkpuvIpI0R1vv) copiado para a pasta 'Tiago Dos Santos Da Silva' (ID: 1iJRv83Fr1yGt_X6ZUlpXzQJzTZatj4Xz) com novo ID: 1-OmPM3L05iHQEzpXkRgC9Jc2Oo6FpCJr.
+2025-10-19 12:57:55,449 - INFO - Arquivo original '8008997-92.2023.8.05.0039-1760891047472-1329818-processo.pdf' (ID: 1ccCztZoQgf2hWYTfdeTLkpuvIpI0R1vv) excluído da pasta de origem.
+2025-10-19 12:57:55,557 - INFO - VERIFICAÇÃO: Arquivo '8008997-92.2023.8.05.0039-1760891047472-1329818-processo.pdf' encontrado na pasta 'Tiago Dos Santos Da Silva' (ID: 1iJRv83Fr1yGt_X6ZUlpXzQJzTZatj4Xz) após a cópia.
+2025-10-19 12:57:55,557 - INFO - Processando arquivo: 8011214-40.2025.8.05.0039-1760890952776-1329818-processo.pdf (ID: 12isVEkUBWA_1n3T94YvXIkrmZaHHe2P_)
+2025-10-19 12:58:04,314 - INFO - Nome do assistido encontrado: Edivan Ferraz Silva, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 12:58:04,314 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 12:58:04,314 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 12:58:04,314 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 12:58:04,452 - INFO - Pasta do assistido 'Edivan Ferraz Silva' ID: 1nwR7okut45_siBV3pSbiCouDstJZ1Wys
+2025-10-19 12:58:05,134 - INFO - Arquivo '8011214-40.2025.8.05.0039-1760890952776-1329818-processo.pdf' (ID: 12isVEkUBWA_1n3T94YvXIkrmZaHHe2P_) copiado para a pasta 'Edivan Ferraz Silva' (ID: 1nwR7okut45_siBV3pSbiCouDstJZ1Wys) com novo ID: 1k6oekrq5h5XhdBcbdAMZBHpivaDKPsGY.
+2025-10-19 12:58:10,571 - INFO - Arquivo original '8011214-40.2025.8.05.0039-1760890952776-1329818-processo.pdf' (ID: 12isVEkUBWA_1n3T94YvXIkrmZaHHe2P_) excluído da pasta de origem.
+2025-10-19 12:58:10,674 - INFO - VERIFICAÇÃO: Arquivo '8011214-40.2025.8.05.0039-1760890952776-1329818-processo.pdf' encontrado na pasta 'Edivan Ferraz Silva' (ID: 1nwR7okut45_siBV3pSbiCouDstJZ1Wys) após a cópia.
+2025-10-19 12:58:10,674 - INFO - Processando arquivo: 8011896-92.2025.8.05.0039-1760890919732-1329818-processo.pdf (ID: 1Y6UMWxJKBh5X2uSAPL1QoWW4GnDG6FZF)
+2025-10-19 12:58:13,361 - INFO - Nome do assistido encontrado: Meire Daiane Dos Santos Barbosa, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 12:58:13,361 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 12:58:13,361 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 12:58:13,361 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 12:58:13,536 - INFO - Pasta do assistido 'Meire Daiane Dos Santos Barbosa' ID: 1513uTbZwIkFhW2Ug1jZOF3BJk4UTqQzF
+2025-10-19 12:58:14,164 - INFO - Arquivo '8011896-92.2025.8.05.0039-1760890919732-1329818-processo.pdf' (ID: 1Y6UMWxJKBh5X2uSAPL1QoWW4GnDG6FZF) copiado para a pasta 'Meire Daiane Dos Santos Barbosa' (ID: 1513uTbZwIkFhW2Ug1jZOF3BJk4UTqQzF) com novo ID: 1SO0W1cXpyOStfUiW-mst4eHnTIDA7k4Q.
+2025-10-19 12:58:14,466 - INFO - Arquivo original '8011896-92.2025.8.05.0039-1760890919732-1329818-processo.pdf' (ID: 1Y6UMWxJKBh5X2uSAPL1QoWW4GnDG6FZF) excluído da pasta de origem.
+2025-10-19 12:58:14,593 - INFO - VERIFICAÇÃO: Arquivo '8011896-92.2025.8.05.0039-1760890919732-1329818-processo.pdf' encontrado na pasta 'Meire Daiane Dos Santos Barbosa' (ID: 1513uTbZwIkFhW2Ug1jZOF3BJk4UTqQzF) após a cópia.
+2025-10-19 12:58:14,593 - INFO - Processando arquivo: 8012209-53.2025.8.05.0039-1760890840934-1329818-processo.pdf (ID: 1qIlpVXGrB-ZhUDjs1CT-aOH4rcgjBzdC)
+2025-10-19 12:58:17,769 - INFO - Nome do assistido encontrado: Jadson Das Neves Oliveira, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 12:58:17,769 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 12:58:17,769 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 12:58:17,769 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 12:58:17,894 - INFO - Pasta do assistido 'Jadson Das Neves Oliveira' ID: 1I-Wqb4ux0fMSxyz4kvj1U02K97FuiADP
+2025-10-19 12:58:18,550 - INFO - Arquivo '8012209-53.2025.8.05.0039-1760890840934-1329818-processo.pdf' (ID: 1qIlpVXGrB-ZhUDjs1CT-aOH4rcgjBzdC) copiado para a pasta 'Jadson Das Neves Oliveira' (ID: 1I-Wqb4ux0fMSxyz4kvj1U02K97FuiADP) com novo ID: 1GFv9W9AF-efVgzlrgAwA3XfrGQqqSrAQ.
+2025-10-19 12:58:18,826 - INFO - Arquivo original '8012209-53.2025.8.05.0039-1760890840934-1329818-processo.pdf' (ID: 1qIlpVXGrB-ZhUDjs1CT-aOH4rcgjBzdC) excluído da pasta de origem.
+2025-10-19 12:58:18,922 - INFO - VERIFICAÇÃO: Arquivo '8012209-53.2025.8.05.0039-1760890840934-1329818-processo.pdf' encontrado na pasta 'Jadson Das Neves Oliveira' (ID: 1I-Wqb4ux0fMSxyz4kvj1U02K97FuiADP) após a cópia.
+2025-10-19 12:58:18,922 - INFO - Processando arquivo: 8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf (ID: 1sPoqII4mubi0vkphp3BoFRXRR0EGMimc)
+2025-10-19 12:58:22,887 - WARNING - Órgão julgador 'VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI' não mapeado para uma pasta específica. Arquivo '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' não movido.
+2025-10-19 12:58:22,887 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' . Arquivo não movido.
+2025-10-19 13:10:54,532 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:10:54,747 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:10:54,747 - INFO - Processando arquivo: 8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf (ID: 1sPoqII4mubi0vkphp3BoFRXRR0EGMimc)
+2025-10-19 13:10:58,429 - INFO - Tentando extração de fallback para o nome do assistido.
+2025-10-19 13:10:58,431 - INFO - Nome do assistido encontrado: Andr E Santos Nascimento, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:10:58,431 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:10:58,431 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:10:58,431 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:10:58,910 - INFO - Pasta 'Andr E Santos Nascimento' criada com ID: 1isvlHgOedPuwa9pHln9CQAWYRGy9v6fG
+2025-10-19 13:10:58,910 - INFO - Pasta do assistido 'Andr E Santos Nascimento' ID: 1isvlHgOedPuwa9pHln9CQAWYRGy9v6fG
+2025-10-19 13:10:59,631 - INFO - Arquivo '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' (ID: 1sPoqII4mubi0vkphp3BoFRXRR0EGMimc) copiado para a pasta 'Andr E Santos Nascimento' (ID: 1isvlHgOedPuwa9pHln9CQAWYRGy9v6fG) com novo ID: 1QUVorw-K1rov2GEErExwHvSDnCcIA7OS.
+2025-10-19 13:10:59,974 - INFO - Arquivo original '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' (ID: 1sPoqII4mubi0vkphp3BoFRXRR0EGMimc) excluído da pasta de origem.
+2025-10-19 13:11:00,101 - INFO - VERIFICAÇÃO: Arquivo '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' encontrado na pasta 'Andr E Santos Nascimento' (ID: 1isvlHgOedPuwa9pHln9CQAWYRGy9v6fG) após a cópia.
+2025-10-19 13:11:00,101 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' . Arquivo não movido.
+2025-10-19 13:24:32,914 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:24:33,136 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:24:33,136 - INFO - Processando arquivo: 8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf (ID: 1QUVorw-K1rov2GEErExwHvSDnCcIA7OS)
+2025-10-19 13:24:36,801 - ERROR - Erro ao extrair informações do PDF /tmp/8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf: bad escape \p at position 2
+2025-10-19 13:24:36,802 - WARNING - Órgão julgador 'None' não mapeado para uma pasta específica. Arquivo '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' não movido.
+2025-10-19 13:24:36,802 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' . Arquivo não movido.
+2025-10-19 13:24:48,050 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:24:48,245 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:24:48,245 - INFO - Processando arquivo: 8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf (ID: 1QUVorw-K1rov2GEErExwHvSDnCcIA7OS)
+2025-10-19 13:24:51,222 - INFO - Nome do assistido encontrado: Andre Santos Nascimento, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:24:51,222 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:24:51,222 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:24:51,222 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:24:51,339 - INFO - Pasta do assistido 'Andre Santos Nascimento' ID: 1Lya4YpqcEJekecE-aOwDIpq0-cp1UXQf
+2025-10-19 13:24:51,967 - INFO - Arquivo '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' (ID: 1QUVorw-K1rov2GEErExwHvSDnCcIA7OS) copiado para a pasta 'Andre Santos Nascimento' (ID: 1Lya4YpqcEJekecE-aOwDIpq0-cp1UXQf) com novo ID: 1xEjZEBw8rlz5CW4Ow8fIRhKMTY7oxwyt.
+2025-10-19 13:24:52,273 - INFO - Arquivo original '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' (ID: 1QUVorw-K1rov2GEErExwHvSDnCcIA7OS) excluído da pasta de origem.
+2025-10-19 13:24:52,396 - INFO - VERIFICAÇÃO: Arquivo '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' encontrado na pasta 'Andre Santos Nascimento' (ID: 1Lya4YpqcEJekecE-aOwDIpq0-cp1UXQf) após a cópia.
+2025-10-19 13:24:52,397 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8011877-86.2025.8.05.0039-1760890874690-1329818-processo.pdf' . Arquivo não movido.
+2025-10-19 13:27:26,596 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:27:26,814 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:37:47,959 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:37:48,183 - INFO - Encontrados 4 arquivos PDF na pasta de origem.
+2025-10-19 13:37:48,184 - INFO - Processando arquivo: 8003117-51.2025.8.05.0039-1760895112383-1329818-processo.pdf (ID: 1JKUhhvH-9XG5orhhq0GFjI5j7tgWpca1)
+2025-10-19 13:37:55,101 - INFO - Nome do assistido encontrado: Gessivaldo De Matos Santos Junior, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:37:55,101 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:37:55,101 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:37:55,101 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:37:55,208 - INFO - Pasta do assistido 'Gessivaldo De Matos Santos Junior' ID: 1AOsII3cuYqrrVdbtedbPSu6otj9MsGg9
+2025-10-19 13:37:55,869 - INFO - Arquivo '8003117-51.2025.8.05.0039-1760895112383-1329818-processo.pdf' (ID: 1JKUhhvH-9XG5orhhq0GFjI5j7tgWpca1) copiado para a pasta 'Gessivaldo De Matos Santos Junior' (ID: 1AOsII3cuYqrrVdbtedbPSu6otj9MsGg9) com novo ID: 1kQnzxZJtj_SHvXD8E87TlPqLXyuCW7yh.
+2025-10-19 13:37:56,191 - INFO - Arquivo original '8003117-51.2025.8.05.0039-1760895112383-1329818-processo.pdf' (ID: 1JKUhhvH-9XG5orhhq0GFjI5j7tgWpca1) excluído da pasta de origem.
+2025-10-19 13:37:56,341 - INFO - VERIFICAÇÃO: Arquivo '8003117-51.2025.8.05.0039-1760895112383-1329818-processo.pdf' encontrado na pasta 'Gessivaldo De Matos Santos Junior' (ID: 1AOsII3cuYqrrVdbtedbPSu6otj9MsGg9) após a cópia.
+2025-10-19 13:37:56,342 - INFO - Processando arquivo: 8009834-79.2025.8.05.0039-1760894954715-1329818-processo.pdf (ID: 18-VfBTZuNqg_nYwybuvdI0UDTTrLVgMS)
+2025-10-19 13:37:59,473 - INFO - Nome do assistido encontrado: Lua Pablo Neves Da Silva, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:37:59,473 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:37:59,473 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:37:59,474 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:37:59,617 - INFO - Pasta do assistido 'Lua Pablo Neves Da Silva' ID: 11kZYKRBdh05UWAe8UeHqmH7ielDLudIa
+2025-10-19 13:38:00,313 - INFO - Arquivo '8009834-79.2025.8.05.0039-1760894954715-1329818-processo.pdf' (ID: 18-VfBTZuNqg_nYwybuvdI0UDTTrLVgMS) copiado para a pasta 'Lua Pablo Neves Da Silva' (ID: 11kZYKRBdh05UWAe8UeHqmH7ielDLudIa) com novo ID: 19ffarXA_R9ZZt3cmfEUzX2ekvL5qrMvX.
+2025-10-19 13:38:00,680 - INFO - Arquivo original '8009834-79.2025.8.05.0039-1760894954715-1329818-processo.pdf' (ID: 18-VfBTZuNqg_nYwybuvdI0UDTTrLVgMS) excluído da pasta de origem.
+2025-10-19 13:38:00,820 - INFO - VERIFICAÇÃO: Arquivo '8009834-79.2025.8.05.0039-1760894954715-1329818-processo.pdf' encontrado na pasta 'Lua Pablo Neves Da Silva' (ID: 11kZYKRBdh05UWAe8UeHqmH7ielDLudIa) após a cópia.
+2025-10-19 13:38:00,821 - INFO - Processando arquivo: 8004658-56.2024.8.05.0039-1760895144330-1329818-processo.pdf (ID: 1X1Qv8z1Y7mNXnqTMofA1IPbZjvP8GlLF)
+2025-10-19 13:38:03,606 - INFO - Nome do assistido encontrado: Rodrigo De Carvalho Brandao, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:38:03,606 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:38:03,606 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:38:03,606 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:38:03,748 - INFO - Pasta do assistido 'Rodrigo De Carvalho Brandao' ID: 1d9yFJHYkNHg_divD1WNM_v71nv1p7aWx
+2025-10-19 13:38:03,934 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:38:04,152 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:38:04,152 - INFO - Processando arquivo: 8004658-56.2024.8.05.0039-1760895144330-1329818-processo.pdf (ID: 1X1Qv8z1Y7mNXnqTMofA1IPbZjvP8GlLF)
+2025-10-19 13:38:04,456 - INFO - Arquivo '8004658-56.2024.8.05.0039-1760895144330-1329818-processo.pdf' (ID: 1X1Qv8z1Y7mNXnqTMofA1IPbZjvP8GlLF) copiado para a pasta 'Rodrigo De Carvalho Brandao' (ID: 1d9yFJHYkNHg_divD1WNM_v71nv1p7aWx) com novo ID: 1gpfEf2nxVsygCRgFLyXYWfU3qgOF2MLT.
+2025-10-19 13:38:04,810 - INFO - Arquivo original '8004658-56.2024.8.05.0039-1760895144330-1329818-processo.pdf' (ID: 1X1Qv8z1Y7mNXnqTMofA1IPbZjvP8GlLF) excluído da pasta de origem.
+2025-10-19 13:38:04,882 - INFO - VERIFICAÇÃO: Arquivo '8004658-56.2024.8.05.0039-1760895144330-1329818-processo.pdf' encontrado na pasta 'Rodrigo De Carvalho Brandao' (ID: 1d9yFJHYkNHg_divD1WNM_v71nv1p7aWx) após a cópia.
+2025-10-19 13:38:04,883 - INFO - Processando arquivo: 8011276-17.2024.8.05.0039-1760895077315-1329818-processo.pdf (ID: 1ySMXA8N0v2HTC4AMbnOo4CZzqSYtFQbx)
+2025-10-19 13:38:06,455 - INFO - Nome do assistido encontrado: Rodrigo De Carvalho Brandao, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:38:06,455 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:38:06,455 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:38:06,456 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:38:06,570 - INFO - Pasta do assistido 'Rodrigo De Carvalho Brandao' ID: 1d9yFJHYkNHg_divD1WNM_v71nv1p7aWx
+2025-10-19 13:38:06,615 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:38:06,804 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:38:06,804 - INFO - Processando arquivo: 8011276-17.2024.8.05.0039-1760895077315-1329818-processo.pdf (ID: 1ySMXA8N0v2HTC4AMbnOo4CZzqSYtFQbx)
+2025-10-19 13:38:10,924 - INFO - Nome do assistido encontrado: Melquisedeque Santos De Jesus, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:38:10,925 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:38:10,925 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:38:10,925 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:38:11,030 - INFO - Pasta do assistido 'Melquisedeque Santos De Jesus' ID: 1tQNkrqWVVH7ixyBTrhujTAIq4mPjWL-C
+2025-10-19 13:38:11,672 - INFO - Arquivo '8011276-17.2024.8.05.0039-1760895077315-1329818-processo.pdf' (ID: 1ySMXA8N0v2HTC4AMbnOo4CZzqSYtFQbx) copiado para a pasta 'Melquisedeque Santos De Jesus' (ID: 1tQNkrqWVVH7ixyBTrhujTAIq4mPjWL-C) com novo ID: 1TmZAor0xRRydIxg0390G9lPuNTb6ddfb.
+2025-10-19 13:38:12,047 - INFO - Arquivo original '8011276-17.2024.8.05.0039-1760895077315-1329818-processo.pdf' (ID: 1ySMXA8N0v2HTC4AMbnOo4CZzqSYtFQbx) excluído da pasta de origem.
+2025-10-19 13:38:12,146 - INFO - VERIFICAÇÃO: Arquivo '8011276-17.2024.8.05.0039-1760895077315-1329818-processo.pdf' encontrado na pasta 'Melquisedeque Santos De Jesus' (ID: 1tQNkrqWVVH7ixyBTrhujTAIq4mPjWL-C) após a cópia.
+2025-10-19 13:38:12,146 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8011276-17.2024.8.05.0039-1760895077315-1329818-processo.pdf' . Arquivo não movido.
+2025-10-19 13:38:12,495 - INFO - Nome do assistido encontrado: Melquisedeque Santos De Jesus, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:38:12,495 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:38:12,495 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:38:12,495 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:38:12,613 - INFO - Pasta do assistido 'Melquisedeque Santos De Jesus' ID: 1tQNkrqWVVH7ixyBTrhujTAIq4mPjWL-C
+2025-10-19 13:38:26,573 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:38:26,768 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:38:29,383 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:38:29,589 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:38:29,783 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:38:29,939 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:38:39,352 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:38:39,536 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:38:55,076 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:38:55,218 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:39:04,280 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:39:04,455 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:39:31,482 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:39:31,693 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:47:23,022 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:23,022 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:23,023 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:23,045 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:23,191 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:47:23,222 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:47:23,223 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:47:23,241 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:47:41,260 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:41,294 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:41,311 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:41,331 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:41,331 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:41,356 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:41,457 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:41,458 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1Keo9saOOYD5-9cRa-zUYapg0z5pED1SE)
+2025-10-19 13:47:41,483 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:41,483 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1Keo9saOOYD5-9cRa-zUYapg0z5pED1SE)
+2025-10-19 13:47:41,506 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:41,506 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1Keo9saOOYD5-9cRa-zUYapg0z5pED1SE)
+2025-10-19 13:47:41,524 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:41,524 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1Keo9saOOYD5-9cRa-zUYapg0z5pED1SE)
+2025-10-19 13:47:41,551 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:41,551 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1Keo9saOOYD5-9cRa-zUYapg0z5pED1SE)
+2025-10-19 13:47:41,554 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:41,554 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1Keo9saOOYD5-9cRa-zUYapg0z5pED1SE)
+2025-10-19 13:47:45,599 - ERROR - Erro ao extrair informações do PDF /tmp/8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf: Cannot read an empty file
+2025-10-19 13:47:45,600 - WARNING - Órgão julgador 'None' não mapeado para uma pasta específica. Arquivo '8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf' não movido.
+2025-10-19 13:47:45,600 - INFO - Processando arquivo: 8010864-52.2025.8.05.0039-1760895952457-1329818-processo.pdf (ID: 1zdw38LXrwe6KEl5TTLDPwIq7m7Gd_M46)
+2025-10-19 13:47:45,615 - ERROR - Erro ao extrair informações do PDF /tmp/8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf: [Errno 2] No such file or directory: '/tmp/8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf'
+2025-10-19 13:47:49,246 - INFO - Nome do assistido encontrado: Wellington Carvalho Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:47:49,247 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:47:49,247 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:47:49,247 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:47:49,699 - INFO - Pasta 'Wellington Carvalho Santos' criada com ID: 1yODjYHj_j6ZrvpuWdk8pB1SAEySSTlL-
+2025-10-19 13:47:49,699 - INFO - Pasta do assistido 'Wellington Carvalho Santos' ID: 1yODjYHj_j6ZrvpuWdk8pB1SAEySSTlL-
+2025-10-19 13:47:50,369 - INFO - Arquivo '8010864-52.2025.8.05.0039-1760895952457-1329818-processo.pdf' (ID: 1zdw38LXrwe6KEl5TTLDPwIq7m7Gd_M46) copiado para a pasta 'Wellington Carvalho Santos' (ID: 1yODjYHj_j6ZrvpuWdk8pB1SAEySSTlL-) com novo ID: 13c98BT05oKDb6m28afImABMYEhnCvRMN.
+2025-10-19 13:47:50,803 - INFO - Arquivo original '8010864-52.2025.8.05.0039-1760895952457-1329818-processo.pdf' (ID: 1zdw38LXrwe6KEl5TTLDPwIq7m7Gd_M46) excluído da pasta de origem.
+2025-10-19 13:47:50,889 - INFO - VERIFICAÇÃO: Arquivo '8010864-52.2025.8.05.0039-1760895952457-1329818-processo.pdf' encontrado na pasta 'Wellington Carvalho Santos' (ID: 1yODjYHj_j6ZrvpuWdk8pB1SAEySSTlL-) após a cópia.
+2025-10-19 13:47:50,890 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8010864-52.2025.8.05.0039-1760895952457-1329818-processo.pdf' . Arquivo não movido.
+2025-10-19 13:47:52,610 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:52,612 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:52,628 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:52,640 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:52,680 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:52,745 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:52,815 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:52,816 - INFO - Processando arquivo: 8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf (ID: 17S-UCAr8dp3jf7cgzR_ISB0dSeU-A1ha)
+2025-10-19 13:47:52,816 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:52,817 - INFO - Processando arquivo: 8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf (ID: 17S-UCAr8dp3jf7cgzR_ISB0dSeU-A1ha)
+2025-10-19 13:47:52,830 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:52,831 - INFO - Processando arquivo: 8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf (ID: 17S-UCAr8dp3jf7cgzR_ISB0dSeU-A1ha)
+2025-10-19 13:47:52,831 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:52,831 - INFO - Processando arquivo: 8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf (ID: 17S-UCAr8dp3jf7cgzR_ISB0dSeU-A1ha)
+2025-10-19 13:47:52,870 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:52,871 - INFO - Processando arquivo: 8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf (ID: 17S-UCAr8dp3jf7cgzR_ISB0dSeU-A1ha)
+2025-10-19 13:47:52,917 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:52,917 - INFO - Processando arquivo: 8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf (ID: 17S-UCAr8dp3jf7cgzR_ISB0dSeU-A1ha)
+2025-10-19 13:47:55,376 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:55,437 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:47:55,538 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:55,538 - INFO - Processando arquivo: 8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf (ID: 17S-UCAr8dp3jf7cgzR_ISB0dSeU-A1ha)
+2025-10-19 13:47:55,620 - INFO - Encontrados 2 arquivos PDF na pasta de origem.
+2025-10-19 13:47:55,620 - INFO - Processando arquivo: 8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf (ID: 17S-UCAr8dp3jf7cgzR_ISB0dSeU-A1ha)
+2025-10-19 13:47:56,515 - INFO - Nome do assistido encontrado: Jameson Pinto Dos Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:47:56,515 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:47:56,515 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:47:56,515 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:47:56,661 - INFO - Pasta do assistido 'Jameson Pinto Dos Santos' ID: 1mXmn-TSTJ1fMqtuU88QXOpabO3icPNU_
+2025-10-19 13:47:57,259 - INFO - Arquivo '8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf' (ID: 17S-UCAr8dp3jf7cgzR_ISB0dSeU-A1ha) copiado para a pasta 'Jameson Pinto Dos Santos' (ID: 1mXmn-TSTJ1fMqtuU88QXOpabO3icPNU_) com novo ID: 1jR1rk7MSOVFmNEovHlj3uEUB6lYQT00C.
+2025-10-19 13:47:57,605 - INFO - Arquivo original '8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf' (ID: 17S-UCAr8dp3jf7cgzR_ISB0dSeU-A1ha) excluído da pasta de origem.
+2025-10-19 13:47:57,638 - INFO - Nome do assistido encontrado: Jameson Pinto Dos Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:47:57,639 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:47:57,639 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:47:57,639 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:47:57,715 - INFO - VERIFICAÇÃO: Arquivo '8000532-60.2024.8.05.0039-1760895918766-1329818-processo.pdf' encontrado na pasta 'Jameson Pinto Dos Santos' (ID: 1mXmn-TSTJ1fMqtuU88QXOpabO3icPNU_) após a cópia.
+2025-10-19 13:47:57,715 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1Keo9saOOYD5-9cRa-zUYapg0z5pED1SE)
+2025-10-19 13:47:57,735 - INFO - Pasta do assistido 'Jameson Pinto Dos Santos' ID: 1mXmn-TSTJ1fMqtuU88QXOpabO3icPNU_
+2025-10-19 13:47:58,456 - INFO - Nome do assistido encontrado: Jameson Pinto Dos Santos, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:47:58,456 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:47:58,456 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:47:58,456 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:47:58,583 - INFO - Pasta do assistido 'Jameson Pinto Dos Santos' ID: 1mXmn-TSTJ1fMqtuU88QXOpabO3icPNU_
+2025-10-19 13:48:02,008 - INFO - Nome do assistido encontrado: Jonathan Toshiro Mendes Nunes Da Rocha, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:48:02,008 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:48:02,008 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:48:02,008 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:48:02,151 - INFO - Pasta do assistido 'Jonathan Toshiro Mendes Nunes Da Rocha' ID: 1_gbOGH8FRqxqiUjzN9MuCeLJRw_spbPF
+2025-10-19 13:48:02,899 - INFO - Arquivo '8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf' (ID: 1Keo9saOOYD5-9cRa-zUYapg0z5pED1SE) copiado para a pasta 'Jonathan Toshiro Mendes Nunes Da Rocha' (ID: 1_gbOGH8FRqxqiUjzN9MuCeLJRw_spbPF) com novo ID: 1RCYt8hPuGI0JNxtNioX2KXusRxF9TgvR.
+2025-10-19 13:48:03,291 - INFO - Arquivo original '8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf' (ID: 1Keo9saOOYD5-9cRa-zUYapg0z5pED1SE) excluído da pasta de origem.
+2025-10-19 13:48:03,406 - INFO - VERIFICAÇÃO: Arquivo '8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf' encontrado na pasta 'Jonathan Toshiro Mendes Nunes Da Rocha' (ID: 1_gbOGH8FRqxqiUjzN9MuCeLJRw_spbPF) após a cópia.
+2025-10-19 13:48:03,406 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf' . Arquivo não movido.
+2025-10-19 13:48:05,450 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:05,450 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:05,615 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:48:05,615 - INFO - Processando arquivo: 8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf (ID: 1ceieUkLQpLJ9WOyk8dB50U-j_vvb_YqT)
+2025-10-19 13:48:05,660 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:48:05,660 - INFO - Processando arquivo: 8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf (ID: 1ceieUkLQpLJ9WOyk8dB50U-j_vvb_YqT)
+2025-10-19 13:48:05,715 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:05,725 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:05,750 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:05,793 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:05,862 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:48:05,862 - INFO - Processando arquivo: 8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf (ID: 1ceieUkLQpLJ9WOyk8dB50U-j_vvb_YqT)
+2025-10-19 13:48:05,870 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:48:05,870 - INFO - Processando arquivo: 8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf (ID: 1ceieUkLQpLJ9WOyk8dB50U-j_vvb_YqT)
+2025-10-19 13:48:05,923 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:48:05,923 - INFO - Processando arquivo: 8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf (ID: 1ceieUkLQpLJ9WOyk8dB50U-j_vvb_YqT)
+2025-10-19 13:48:05,935 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:48:05,936 - INFO - Processando arquivo: 8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf (ID: 1ceieUkLQpLJ9WOyk8dB50U-j_vvb_YqT)
+2025-10-19 13:48:10,020 - INFO - Nome do assistido encontrado: Orlando, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:48:10,020 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:48:10,020 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:48:10,020 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:48:10,510 - INFO - Pasta 'Orlando' criada com ID: 1gxmuQzY_M2S612Upw4zchYSXAkaDrZF-
+2025-10-19 13:48:10,511 - INFO - Pasta do assistido 'Orlando' ID: 1gxmuQzY_M2S612Upw4zchYSXAkaDrZF-
+2025-10-19 13:48:10,526 - INFO - Nome do assistido encontrado: Orlando, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:48:10,527 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:48:10,527 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:48:10,527 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:48:10,622 - INFO - Pasta do assistido 'Orlando' ID: 1gxmuQzY_M2S612Upw4zchYSXAkaDrZF-
+2025-10-19 13:48:10,998 - INFO - Arquivo '8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf' (ID: 1ceieUkLQpLJ9WOyk8dB50U-j_vvb_YqT) copiado para a pasta 'Orlando' (ID: 1gxmuQzY_M2S612Upw4zchYSXAkaDrZF-) com novo ID: 1Lp4L7E10JJ-RM3ILR5O0zW0DWQmhA6qq.
+2025-10-19 13:48:11,036 - INFO - Nome do assistido encontrado: Orlando, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:48:11,037 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:48:11,037 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:48:11,037 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:48:11,116 - INFO - Pasta do assistido 'Orlando' ID: 1gxmuQzY_M2S612Upw4zchYSXAkaDrZF-
+2025-10-19 13:48:11,229 - INFO - Arquivo '8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf' (ID: 1ceieUkLQpLJ9WOyk8dB50U-j_vvb_YqT) copiado para a pasta 'Orlando' (ID: 1gxmuQzY_M2S612Upw4zchYSXAkaDrZF-) com novo ID: 1fbqFIebcgYykoulidP_ESQf2Z2OjWdvK.
+2025-10-19 13:48:11,266 - INFO - Arquivo original '8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf' (ID: 1ceieUkLQpLJ9WOyk8dB50U-j_vvb_YqT) excluído da pasta de origem.
+2025-10-19 13:48:11,391 - INFO - VERIFICAÇÃO: Arquivo '8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf' encontrado na pasta 'Orlando' (ID: 1gxmuQzY_M2S612Upw4zchYSXAkaDrZF-) após a cópia.
+2025-10-19 13:48:11,391 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8012665-03.2025.8.05.0039-1760895979389-1329818-processo.pdf' . Arquivo não movido.
+2025-10-19 13:48:13,177 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:13,202 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:13,370 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:13,376 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:13,384 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:48:13,407 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:48:13,551 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:48:13,561 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:48:31,282 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:31,310 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:48:31,426 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:48:31,445 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:49:54,682 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:49:54,731 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:49:54,749 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:49:54,795 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:49:54,871 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:49:54,872 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1SKMJJ19OvQbN7gRDDJVogOBgRjvLScC9)
+2025-10-19 13:49:54,915 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:49:54,916 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1SKMJJ19OvQbN7gRDDJVogOBgRjvLScC9)
+2025-10-19 13:49:54,933 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:49:54,934 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1SKMJJ19OvQbN7gRDDJVogOBgRjvLScC9)
+2025-10-19 13:49:54,992 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:49:54,992 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1SKMJJ19OvQbN7gRDDJVogOBgRjvLScC9)
+2025-10-19 13:49:58,085 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:49:58,137 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:49:58,283 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:49:58,284 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1SKMJJ19OvQbN7gRDDJVogOBgRjvLScC9)
+2025-10-19 13:49:58,417 - INFO - Encontrados 1 arquivos PDF na pasta de origem.
+2025-10-19 13:49:58,417 - INFO - Processando arquivo: 8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf (ID: 1SKMJJ19OvQbN7gRDDJVogOBgRjvLScC9)
+2025-10-19 13:49:59,151 - INFO - Nome do assistido encontrado: Jonathan Toshiro Mendes Nunes Da Rocha, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:49:59,151 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:49:59,151 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:49:59,151 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:49:59,273 - INFO - Pasta do assistido 'Jonathan Toshiro Mendes Nunes Da Rocha' ID: 1_gbOGH8FRqxqiUjzN9MuCeLJRw_spbPF
+2025-10-19 13:49:59,878 - INFO - Arquivo '8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf' (ID: 1SKMJJ19OvQbN7gRDDJVogOBgRjvLScC9) copiado para a pasta 'Jonathan Toshiro Mendes Nunes Da Rocha' (ID: 1_gbOGH8FRqxqiUjzN9MuCeLJRw_spbPF) com novo ID: 1w7yf_JHeoYHbavENsYNhLYm8s7YDq6G6.
+2025-10-19 13:50:00,253 - INFO - Arquivo original '8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf' (ID: 1SKMJJ19OvQbN7gRDDJVogOBgRjvLScC9) excluído da pasta de origem.
+2025-10-19 13:50:00,355 - INFO - VERIFICAÇÃO: Arquivo '8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf' encontrado na pasta 'Jonathan Toshiro Mendes Nunes Da Rocha' (ID: 1_gbOGH8FRqxqiUjzN9MuCeLJRw_spbPF) após a cópia.
+2025-10-19 13:50:00,355 - ERROR - Não foi possível extrair nome do assistido ou órgão julgador do arquivo '8010093-74.2025.8.05.0039-1760896005047-1329818-processo.pdf' . Arquivo não movido.
+2025-10-19 13:50:02,094 - INFO - Nome do assistido encontrado: Jonathan Toshiro Mendes Nunes Da Rocha, Órgão Julgador: VARA DE VIOLÊNCIA DOMÉSTICA FAM CONTRA A MULHER DE CAMAÇARI
+2025-10-19 13:50:02,094 - INFO - ROOT_DESTINATION_FOLDER_ID: 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:50:02,095 - INFO - DYNAMIC_COURT_ROOT_FOLDER_ID: 1bxPN_PF-wC0XNX79UXCSi5UVDuIHt5Lf
+2025-10-19 13:50:02,095 - INFO - parent_folder_for_assisted (ID ou nome): 1fN2GiGlNzc61g01ZeBMg9ZBy1hexx0ti
+2025-10-19 13:50:02,243 - INFO - Pasta do assistido 'Jonathan Toshiro Mendes Nunes Da Rocha' ID: 1_gbOGH8FRqxqiUjzN9MuCeLJRw_spbPF
+2025-10-19 13:50:03,850 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:50:03,888 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:50:04,008 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:50:04,074 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:53:34,937 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:53:35,010 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-10-19 13:53:35,089 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
+2025-10-19 13:53:35,170 - INFO - Nenhum arquivo PDF encontrado na pasta de origem.
